@@ -103,16 +103,27 @@ li.Negra.hover{
 
 @media (max-width: 768px) {
     body {
-        margin: 0; /* Eliminamos márgenes en el cuerpo */
-        padding: 0; /* Eliminamos padding en el cuerpo */
-        overflow: hidden; /* Evitamos que el contenido se desborde */
+        margin: 0; 
+        padding: 0; 
+        overflow: hidden; 
     }
 
     div {
         width: 100vw; /* El piano ocupará todo el ancho de la pantalla */
         height: 100vh; /* El piano ocupará todo el alto de la pantalla */
+        display: flex; /* Añadimos esta propiedad para evitar que las teclas se desborden verticalmente */
+        flex-wrap: wrap; /* Añadimos esta propiedad para que las teclas se ajusten al ancho de la pantalla */
     }
 
+    ul {
+        width: 100%; /* Ajustamos el tamaño del ul al 100% del piano */
+        display: flex; /* Añadimos esta propiedad para evitar que las teclas se desborden horizontalmente */
+        flex-wrap: wrap; /* Añadimos esta propiedad para que las teclas se ajusten al ancho de la pantalla */
+    }
+
+    li {
+        width: 6.25%; /* Ajustamos el tamaño de las teclas para ocupar el 100% del ul */
+    }
     
     .message-container {
         display: none;
