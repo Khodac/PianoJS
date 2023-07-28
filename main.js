@@ -53,8 +53,8 @@ function applyPianoRotation() {
         pianoDiv.style.display = 'flex'; 
         pianoDiv.style.transform = 'none';
         pianoDiv.style.transformOrigin = 'unset';
-        pianoDiv.style.height = '320px'; 
-        pianoDiv.style.width = '80%';
+        pianoDiv.style.height = '220px'; 
+        pianoDiv.style.width = '90%';
         pianoDiv.style.position = 'relative';
         pianoDiv.style.top = 'unset';
         pianoDiv.style.left = 'unset';
