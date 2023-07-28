@@ -102,6 +102,10 @@ li.Negra.hover{
 
 
 @media (max-width: 768px) {
+    div {
+        width: 100%; /* El piano ocupará todo el ancho de la pantalla */
+        height: 60vh; /* Ajusta este valor para tu preferencia */
+    }
 
     .message-container {
         display: none;
